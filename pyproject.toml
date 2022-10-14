@@ -7,6 +7,7 @@ packages = [{include = "bug_report"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+flask = "^2.2.2"
 
 
 [build-system]
