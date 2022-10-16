@@ -9,6 +9,7 @@ packages = [{include = "bug_report"}]
 python = "^3.10"
 flask = "^2.2.2"
 requests = "^2.28.1"
+python-dotenv = "^0.21.0"
 
 
 [build-system]

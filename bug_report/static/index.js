@@ -9,7 +9,7 @@ const takeScreentshot = () =>
 const sendBugReport = async () => {
   const headers = { "Content-Type": "application/json" };
   const screentshot = await takeScreentshot();
-  const dom = document.body.innerHTML + document.head.innerHTML;
+  const dom = document.head.outerHTML + document.body.outerHTML;
   const body = JSON.stringify({
     message: "there is a bug",
     screentshot,
