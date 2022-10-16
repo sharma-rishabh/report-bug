@@ -15,7 +15,9 @@ const sendBugReport = async () => {
     screentshot,
     dom,
   });
-  return API.postBugReport({ method: "POST", headers, body });
+  return API.postBugReport({ method: "POST", headers, body })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
 };
 
 const main = () => {
